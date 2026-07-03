@@ -1,0 +1,139 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.payout {
+    line-height: 0.5;
+}
+
+.container-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-three {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgb(233, 233, 233);
+}
+
+.box {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 10px;
+}
+
+.table {
+    display: flex;
+    gap: 10px;
+}
+
+.button button {
+    padding: 8px 15px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.left {
+    flex: 4;
+    border: 2px solid rgb(233, 233, 233);
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.right {
+    flex: 2;
+}
+
+.left table {
+    border: 1px solid rgb(233, 233, 233);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cardfive {
+    padding: 10px;
+    border: 2px solid #7150f5;
+    border-radius: 20px;
+    background-color: #7150f5;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top button {
+    padding: 5px 10px;
+}
+
+td:nth-child(2) {
+    color: #6b7280;
+}
+
+td:nth-child(4) {
+    color: #6b7280;
+}
+
+td:nth-child(6) {
+    color: #6b7280;
+}
+
+th {
+    color: #6b7280;
+}
+
+table td:last-child {
+    border-left: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+
+    .container-one,
+    .container-two,
+    .container-three {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .container-one {
+        line-height: 3;
+    }
+
+    .table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}
